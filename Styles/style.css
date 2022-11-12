@@ -13,8 +13,11 @@
 }
 
 .header {
-  height: 956px;
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, .5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-title {
@@ -25,43 +28,26 @@
   font-weight: 500;
 }
 
-.overlay {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
 .card-section {
-  height: 900px;
   min-width: 912px;
   background-color: rgba(0, 0, 0, .5);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-.qr-section {
-  height: 450px;
-  background-color: rgba(0, 0, 0, .5);
-  display: flex;
-  justify-content: space-around;
-}
-
-.qr-text {
-  margin: 0 auto;
-  height: 200px;
-  width: 600px;
+  gap: 50px;
 }
 
 .card {
   font-family: 'Code New Roman';
   width: 400px;
-  height: 450px;
   background-color: white;
-  margin-top: 225px;
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.9);
   padding: 20px auto;
+}
+
+.card:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .card-title {
@@ -76,39 +62,54 @@
 }
 
 .card-content {
+  height: 300px;
   margin: 20px auto;
-  height: 200px;
   width: 300px;
 }
 
-.card-content_tasty {
-  background-image: url(https://vibirai.ru/image/1123052.jpg);
+.card-content_aztec {
+  background-image: url(../Images/qIjZL-TJIj8.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.card-content_disgusting {
-  background-image: url(https://gallery.forum-grad.ru/files/4/6/3/5/8/more-utterly-disgusting-foods-8.jpg);
+.card-content_matrix {
+  background-image: url(../Images/2BibfZXkIBU.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.card-content_jopa {
-  background-image: url(https://xcraft.ru/uploads/forum/images/1481297569655.jpg);
+.card-content_codablock {
+  background-image: url(../Images/pO_e5n3_tfM.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.check {
-  font-size: 40px;
-  text-align: center;
+.card-content_maxi {
+  background-image: url(../Images/Y1DKC2R4nN4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-content_pdf417 {
+  background-image: url(../Images/_8z04gAfkKc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-content_callme {
+  background-image: url(../Images/O2cps683iO8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .podval {
-  height: 250px;
   width: 100%;
   margin-top: 100px;
 }
@@ -128,7 +129,6 @@
 }
 
 .footer {
-  height: 400px;
   width: 100%;
   background-color: #181818;
   box-shadow: 0px -7px 15px 2px rgba(0, 0, 0, .5);
