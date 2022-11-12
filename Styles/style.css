@@ -1,10 +1,11 @@
 @import url(../Fonts/Code\ New\ Roman.otf);
+
 @font-face {
   font-family: 'Code New Roman';
   font-style: normal;
   font-weight: lighter;
   src: local('Code New Roman'),
-  url('../Fonts/Code\ New\ Roman.otf')
+    url('../Fonts/Code\ New\ Roman.otf')
 }
 
 .page {
@@ -16,26 +17,37 @@
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, .5);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../Images/JDStsRdEsBM.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-title {
-  margin: auto;
   font-size: 140px;
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-weight: 500;
+  text-shadow: white 0 0 10px;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .card-section {
   min-width: 912px;
-  background-color: rgba(0, 0, 0, .5);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .card {
@@ -44,10 +56,7 @@
   background-color: white;
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.9);
   padding: 20px auto;
-}
-
-.card:nth-of-type(3n) {
-  margin-right: 0;
+  border-radius: 15px;
 }
 
 .card-title {
@@ -55,16 +64,10 @@
   font-size: 30px;
 }
 
-.card-text {
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-
 .card-content {
-  height: 300px;
-  margin: 20px auto;
-  width: 300px;
+  min-height: 300px;
+  margin: 40px 20px;
+  min-width: 300px;
 }
 
 .card-content_aztec {
@@ -109,9 +112,86 @@
   background-size: contain;
 }
 
+.card-content_microsoft {
+  background-image: url(../Images/9E3-EGDoiKo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-content_ccc {
+  background-image: url(../Images/-crIRB2IDhQ.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.history-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.history-content {
+  width: 55%;
+  font-family: 'Code New Roman';
+  background-color: white;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .7);
+  min-height: 300px;
+  min-width: 500px;
+  padding: 20px 20px;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.history-text {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.history-images {
+  margin-top: 20px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.history-woodland {
+  background-image: url(../Images/LJD-8xAvHZo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.history-silver {
+  background-image: url(../Images/kmX1Kz1E_Bk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.history-yohanson {
+  background-image: url(../Images/лорер-300x292.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shadow-5 {
+  background-color: rgba(0, 0, 0, .4);
+}
+
 .podval {
-  width: 100%;
-  margin-top: 100px;
+  min-height: 300px;
+  width: 100vh;
 }
 
 .podval-text {
@@ -133,5 +213,6 @@
   background-color: #181818;
   box-shadow: 0px -7px 15px 2px rgba(0, 0, 0, .5);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
